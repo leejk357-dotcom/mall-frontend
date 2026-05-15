@@ -3,14 +3,14 @@
 import axios from "axios";
 import {API_SERVER_HOST} from "./todoApi.jsx";
 
-const rest_api_key = `d2bb708c4eb5a39b31bafcde57cacbc4`
+const rest_api_key = ``
 const redirect_uri = `http://localhost:5173/member/kakao`
 
 const auth_code_path = `https://kauth.kakao.com/oauth/authorize`
 
 const access_token_url = `https://kauth.kakao.com/oauth/token`
 
-const client_secret = `W1GbdSroHKLoH9FK9EqhV8z5RZ8b8hJ3`
+const client_secret = ``
 
 export const getKakaoLoginLink = () => {
 
@@ -51,7 +51,7 @@ export const getMemberWithAccessToken = async (accessToken) => {
 import axios from "axios"; // 기본 axios (JWT 인터셉터 불필요 - 카카오 로그인은 토큰 없이 시작)
 import {API_SERVER_HOST} from "./todoApi.jsx"; // Spring 서버 호스트 주소
 
-const rest_api_key = `d2bb708c4eb5a39b31bafcde57cacbc4` // 카카오 앱의 REST API 키 (카카오 개발자 콘솔에서 발급)
+const rest_api_key = `` // 카카오 앱의 REST API 키 (카카오 개발자 콘솔에서 발급)
 const redirect_uri = `http://localhost:5173/member/kakao` // 카카오 인증 후 리다이렉트될 React 앱 경로
 const auth_code_path = `https://kauth.kakao.com/oauth/authorize` // 카카오 인가 코드 요청 URL
 
